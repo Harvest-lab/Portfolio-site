@@ -22,33 +22,33 @@ Email: harvestekoyata@gmail.com
 # My Process
 1. Planning & Structure
 First, I mapped out what my portfolio needed to communicate:
-Who I am,
-What I do,
-The services I offer,
-My recent projects,
-How visitors can contact me.
+i. Who I am,
+ii. What I do,
+iii. The services I offer,
+iv. My recent projects,
+v. How visitors can contact me.
 I planned these sections to match the key goals of a portfolio: clarity, professionalism, and conversion (getting clients).
 
 2. Design & Layout
 I chose a clean, responsive layout that works well on both desktop and mobile.
 I made sure:
-The hero “Hi, it’s Harvest” immediately tells visitors who I am,
-The services and work sections are easy to scan,
-Testimonials add trust from real clients.
+i. The hero “Hi, it’s Harvest” immediately tells visitors who I am,
+ii. The services and work sections are easy to scan,
+iii. Testimonials add trust from real clients.
 
 3. Building the Website
-I built the website using:
-HTML to structure the content,
-CSS to style the site and make it responsive,
-And JavaScript for interactive parts.
-I focused on mobile-first design so it looks great on phones and desktops — since many visitors browse on mobile.
+i. I built the website using:
+ii. HTML to structure the content,
+iii. CSS to style the site and make it responsive,
+iv. And JavaScript for interactive parts.
+v. I focused on mobile-first design so it looks great on phones and desktops — since many visitors browse on mobile.
 
 4. Content Creation
-I wrote clear, professional text for:
-My “About Me” section,
-Service descriptions,
-Project previews,
-Testimonials from clients.
+i. I wrote clear, professional text for:
+ii. My “About Me” section,
+iii. Service descriptions,
+iv. Project previews,
+v. Testimonials from clients.
 This makes it easy for visitors to understand my skills and what I can help them with.
 
 5. Deployment
