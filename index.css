@@ -2,547 +2,692 @@
 /* Custom properties   */
 /* ------------------- */
 
-:root{
-    --pry-clr: rgb(171, 255, 46);
-    --dark-clr: rgb(10, 19, 17);
-    --white-clr: rgb(247, 247, 247);
+:root {
+  --pry-clr: rgb(171, 255, 46);
+  --dark-clr: rgb(10, 19, 17);
+  --white-clr: rgb(247, 247, 247);
 }
-
 
 /* General styling */
-*{
-    margin: 0;
-    padding: 0;
-    /* to make deverything stay inside the page */
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  /* to make deverything stay inside the page */
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }
 
-html{
-    font-size: 60%;
+html {
+  font-size: 60%;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: var(--dark-clr);
-    color: var(--white-clr);
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--dark-clr);
+  color: var(--white-clr);
 }
 
-h2{
-    font-size: 5rem;
-    color: var(--pry-clr);
+h2 {
+  font-size: 5rem;
+  color: var(--pry-clr);
 }
-
-
 
 /* The heading part */
-header{
-    /* margin-top: 20px; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    backdrop-filter: blur(5px);
+header {
+  /* margin-top: 20px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(5px);
 }
 
-.logo{
-    font-size: 3rem;
-    color: greenyellow;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease;
+.logo {
+  font-size: 3rem;
+  color: greenyellow;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 /* styling for when you hover around the logo */
-.logo:hover{
-    /* to make the logo increase in size */
-    transform: scale(1.1);
+.logo:hover {
+  /* to make the logo increase in size */
+  transform: scale(1.1);
 }
 
-.navbar-menu a{
-    font-size: 1.8rem;
-    color: var(--white-clr);
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    /* white-space: nowrap; */
-    border-bottom: 3px solid transparent;
+.navbar-menu a {
+  font-size: 1.8rem;
+  color: var(--white-clr);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  /* white-space: nowrap; */
+  border-bottom: 3px solid transparent;
 }
 
-.navbar-menu a:hover, 
-.navbar-menu a.active{
-    color: var(--pry-clr);
-    border-bottom: 3px solid var(--pry-clr);
+.navbar-menu a:hover,
+.navbar-menu a.active {
+  color: var(--pry-clr);
+  border-bottom: 3px solid var(--pry-clr);
 }
 
 /* styling for the navbar toggle button */
-.navbar-toggle{
-    display: none;
-    background: transparent;
-    padding: 10px;
-    /* to remove the border */
-    border: none;
-    /* to make it clickable */
-    cursor: pointer;
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  padding: 10px;
+  /* to remove the border */
+  border: none;
+  /* to make it clickable */
+  cursor: pointer;
 }
 
-.bar{
-    /* to make each bar appear as a block */
-    display: block;
-    width: 25px;
-    height: 3px;
-    /* to set the space between each bar */
-    margin: 5px auto;
-    background: var(--white-clr);
-    transition: all 0.3s ease-in-out;
+.bar {
+  /* to make each bar appear as a block */
+  display: block;
+  width: 25px;
+  height: 3px;
+  /* to set the space between each bar */
+  margin: 5px auto;
+  background: var(--white-clr);
+  transition: all 0.3s ease-in-out;
 }
-
 
 /* the introduction section */
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    min-height: 100vh;
-    padding: 8vw 8vw 0 8vw;
-    background-color: var(--dark-clr);
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  min-height: 100vh;
+  padding: 8vw 8vw 0 8vw;
+  background-color: var(--dark-clr);
 }
 
-.home .home-content h1{
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
-span{
-    color: var(--pry-clr);
+span {
+  color: var(--pry-clr);
 }
 
-.home-content h3{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+.home-content h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
-.home-img{
-    border-radius: 50%;
+.home-img {
+  border-radius: 50%;
 }
 
 /* styling for the profile picture */
-.home-img img{
-    position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid var(--pry-clr);
-    cursor: pointer;
-    transition: 0.2s linear;
+.home-img img {
+  position: relative;
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px solid var(--pry-clr);
+  cursor: pointer;
+  transition: 0.2s linear;
 }
 
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+.home-img img:hover {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 /* styling for the social icons */
-.social-icons i{
-    color: #ddd;
-    font-size: 3rem;
-    padding: 10px;
-    /* background-color: transparent; */
-    border: 0.2rem solid var(--pry-clr);
-    border-radius: 50%;
-    margin: 1rem 1.5rem 2rem 0;
-    transition: 0.3s ease;
-    /* background: var(--white-clr); */
+.social-icons i {
+  color: #ddd;
+  font-size: 3rem;
+  padding: 10px;
+  /* background-color: transparent; */
+  border: 0.2rem solid var(--pry-clr);
+  border-radius: 50%;
+  margin: 1rem 1.5rem 2rem 0;
+  transition: 0.3s ease;
+  /* background: var(--white-clr); */
 }
 
 /* styling for when the icons are hovered over */
-.social-icons i:hover{
-    /* for the icons to become dark, but unfortunately its not needed here */
-    color: black;
-    transform: scale(1.1) translateY(-5px);
-    /* for the icons to have a greenyellow colour when hovered over*/
-    background-color: var(--pry-clr);
-    /* for the icons to have a yellowgreen shadow when hovered over*/
-    box-shadow: 0 0 15px var(--pry-clr);
+.social-icons i:hover {
+  /* for the icons to become dark, but unfortunately its not needed here */
+  color: black;
+  transform: scale(1.1) translateY(-5px);
+  /* for the icons to have a greenyellow colour when hovered over*/
+  background-color: var(--pry-clr);
+  /* for the icons to have a yellowgreen shadow when hovered over*/
+  box-shadow: 0 0 15px var(--pry-clr);
 }
 
 /* styling for the button */
-.btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background-color: var(--dark-clr);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: var(--pry-clr);
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid var(--pry-clr);
-    transition: 0.3s ease;
-    cursor: pointer;
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: var(--dark-clr);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: var(--pry-clr);
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid var(--pry-clr);
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 /* styling for when you hover over the "hire me" button */
-.btn:hover{
-    transform: scale3d(1.03);
-    background-color: var(--pry-clr);
-    color: black;
-    box-shadow: 0 0 15px var(--pry-clr);
+.btn:hover {
+  transform: scale3d(1.03);
+  background-color: var(--pry-clr);
+  color: black;
+  box-shadow: 0 0 15px var(--pry-clr);
 }
 
 /* styling for the paragraph */
-.full-text{
-    font-size: 15px;
+.full-text {
+  font-size: 18px;
 }
 
-.typing-text{
-    font-size: 50px;
-    font-weight: 600;
-    min-width: 280px;
+.typing-text {
+  font-size: 50px;
+  font-weight: 600;
+  min-width: 280px;
 }
 
-.typing-text span{
-    position: relative;
+.typing-text span {
+  position: relative;
 }
 
-.typing-text span::before{
-    content: "Frontend Developer";
-    color: var(--pry-clr);
-    animation: words 20s infinite;
+.typing-text span::before {
+  content: "Frontend Developer";
+  color: var(--pry-clr);
+  animation: words 20s infinite;
 }
-
 
 /* for about me */
-.about{
-    padding: 6vw 8vw 3vw;
-    /* text-align: center; */
+.about {
+  padding: 6vw 8vw 3vw;
 }
 
-.about h2{
-    font-size: 5rem;
-    color: var(--pry-clr);
+.about h2 {
+  text-align: center;
 }
 
 .about p,
-.about a{
-    font-size: 18px;
-    color: #ddd;
+.about a {
+  font-size: 18px;
+  color: #ddd;
+  text-align: start;
+  transition: 0.3s ease;
 }
 
-.about a:hover{
-    color: var(--pry-clr);
-    text-decoration: underline;
+.about a {
+  text-decoration: underline;
+  color: var(--pry-clr);
 }
 
+.about a:hover {
+  text-decoration: none;
+}
 
 /* my services */
-.services{
-    padding: 6vw 8vw 3vw;
-    text-align: center;
+.services {
+  padding: 6vw 8vw 3vw;
+  text-align: center;
+  transition: 0.3s ease-in;
 }
 
-.services h2{
-    font-size: 5rem;
-    color: var(--pry-clr);
+.services p {
+  font-size: 18px;
 }
 
-.services p{
-    font-size: 18px;
+.services .services-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2.5rem;
+  margin-top: 50px;
 }
 
-.services .services-base{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2.5rem;
-    margin-top: 50px;
+.services .services-base .service-box {
+  text-align: start;
+  padding: 25px;
+  border-radius: 10px;
+  background: rgba(16, 28, 26, 0.7);
+  backdrop-filter: blur(6px);
+  border: 1px solid #333;
 }
 
-.services .services-base .service-box{
-    text-align: start;
-    padding: 25px;
-    border-radius: 10px;
-    background: rgba(16, 28, 26, .7);
-    backdrop-filter: blur(6px);
-    border: 1px solid #333;
+.service-box i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--pry-clr);
 }
 
-.service-box i{
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: var(--pry-clr);
+.service-box h4 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
-.service-box h4{
-    font-size: 2.3rem;
-    font-weight: 600;
-    margin-bottom: 8px;
+.service-box p {
+  color: #aaa;
 }
-
-.service-box p{
-    color: #aaa;
-}
-
 
 /* Projects */
-.projects{
-    padding: 6vw 8vw 3rem;
-    text-align: center;
+.projects {
+  padding: 6vw 8vw 3rem;
+  text-align: center;
+  transition: 0.3s ease-in;
 }
 
-.projects p{
-    font-size: 18px;
+.projects p {
+  font-size: 18px;
 }
 
-.projects .projects-base{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin: 50px 0 40px;
+.projects .projects-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin: 50px 0 40px;
 }
 
-.projects .projects-base .project-box{
-    /* width: 100%; */
-    border-radius: 10px;
-    padding: 10px;
-    background: rgba(16, 28, 26, .7);
-    border: 1px solid #333;
+.projects .projects-base .project-box {
+  /* width: 100%; */
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(16, 28, 26, 0.7);
+  border: 1px solid #333;
 }
 
-.project-box img{
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.project-box img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.project-box a h4{
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: var(--white-clr);
+.project-box a h4 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--white-clr);
 }
 
-.project-box a p{
-    color: #aaa;
+.project-box a p {
+  color: #aaa;
 }
 
-.details{
-    padding-left: 20px;
-    text-align: start;
+.details {
+  padding-left: 20px;
+  text-align: start;
 }
 
-.projects a.all-projects{
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    color: var(--pry-clr);
-    border: 2px solid var(--pry-clr);
+.projects a.all-projects {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: var(--pry-clr);
+  border: 2px solid var(--pry-clr);
 }
 
+.projects a.all-projects:hover {
+  background-color: var(--pry-clr);
+  color: var(--dark-clr);
+}
 
 /* Why hire me */
-.choose{
-    padding: 6vw 8vw 3rem;
-    text-align: center;
+.choose {
+  padding: 6vw 8vw 3rem;
+  text-align: center;
+  transition: 0.3s ease-in;
 }
 
-.choose p{
-    font-size: 18px;
+.choose p {
+  font-size: 18px;
 }
 
-.choose .choose-base{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 50px;
+.choose .choose-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* justify-content: center; */
+  gap: 3rem;
+  margin-top: 50px;
 }
 
-.choose .choose-base .choose-box{
-    height: 180px;
-    width: 250px;
-    padding: 10px;
-    border-radius: 10px;
-    background: rgba(16, 28, 26, .7);
-    border: 1px solid #333;
+.choose .choose-base .choose-box {
+  /* height: 180px;
+    width: 250px; */
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(16, 28, 26, 0.7);
+  border: 1px solid #333;
 }
 
-.choose-box i{
-    font-size: 3rem;
-    margin: 15px 0;
-    color: var(--pry-clr);
+.choose-box i {
+  font-size: 3rem;
+  margin: 15px 0;
+  color: var(--pry-clr);
 }
 
-.choose-box h5{
-    font-size: 2rem;
+.choose-box h5 {
+  font-size: 2rem;
 }
 
-.choose-box p{
-    font-size: 14px;
+.choose-box p {
+  font-size: 14px;
 }
-
 
 /* Client Testimonials */
-.testimonials{
-    padding: 6vw 8vw 3rem;
-    text-align: center;
+.testimonials {
+  padding: 6vw 8vw 3rem;
+  text-align: center;
+  transition: 0.3s ease-in;
 }
 
-.testimonials p{
-    font-size: 18px;
+.testimonials p {
+  font-size: 18px;
 }
 
-.testimonials .testimony-base{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin-top: 50px;
+.testimonials .testimony-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 50px;
 }
 
-.testimony-base .testimony-box{
-    text-align: start;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(16, 28, 26, .7);
-    border: 1px solid #333;
+.testimony-base .testimony-box {
+  text-align: start;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(16, 28, 26, 0.7);
+  border: 1px solid #333;
 }
 
-.testimony-box i{
-    font-size: 1.5rem;
-    color: #fdc938;
+.testimony-box i {
+  font-size: 1.5rem;
+  color: #fdc938;
 }
 
-.testimony-box p{
-    margin: 1.5rem 0;
+.testimony-box p {
+  margin: 1.5rem 0;
 }
 
-.person{
-    display: flex;
-    align-items: center;
+.person {
+  display: flex;
+  align-items: center;
 }
 
-.testimony-box .person h6.initial{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--dark-clr);
-    padding: 9px 12px;
-    margin-right: 13px;
-    border-radius: 50%;
-    background: var(--pry-clr);
+.testimony-box .person h6.initial {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-clr);
+  padding: 9px 12px;
+  margin-right: 13px;
+  border-radius: 50%;
+  background: var(--pry-clr);
 }
 
-.testimony-box .person .info h6{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff;
+.testimony-box .person .info h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
 }
 
-.testimony-box .person .info p{
-    font-size: 18px;
-    font-weight: 300;
-    margin: 0;
+.testimony-box .person .info p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
 }
-
 
 /* get in touch */
-.get-in-touch{
-    padding: 6vw 8vw 3rem;
-    text-align: center;
+.get-in-touch {
+  padding: 6vw 8vw 3rem;
+  text-align: center;
+  transition: 0.3s ease-in;
 }
 
-.get-in-touch p{
-    font-size: 18px;
+.get-in-touch p {
+  font-size: 18px;
 }
 
-.get-in-touch .customer-info{
-    padding: 3rem;
-    width: 50%;
-    margin: 30px auto 0;
-    background-color: rgba(255, 255, 255, 0.4);
-    filter: drop-shadow(6px);
-    backdrop-filter: blur(6px);
-    border-radius: 20px;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    color: #161616;
+.get-in-touch .customer-info {
+  padding: 3rem;
+  width: 50%;
+  margin: 30px auto 0;
+  background: rgba(16, 28, 26, 0.7);
+  filter: drop-shadow(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 
-.customer-info h4{
-    text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
+.customer-info h4 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
 }
 
-.customer-info p{
-    margin-bottom: 5px;
-    font-weight: 600;
+.customer-info label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .customer-info input,
-.customer-info textarea{
-    font-size: 15px;
-    margin-bottom: 20px;
-    padding: 9px 13px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(6px);
+.customer-info textarea {
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding: 9px 13px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  color: var(--white-clr);
 }
 
-.customer-info button{
-    padding: 10px 13px;
-    font-size: 18px;
-    border-radius: 10px;
-    background: var(--pry-clr);
-    font-weight: 600;
-    color: var(--dark-clr);
+.customer-info button {
+  padding: 10px 13px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: var(--pry-clr);
+  font-weight: 600;
+  color: var(--dark-clr);
 }
 
-.customer-info button:hover{
-    background-color: var(--dark-clr);
-    color: var(--pry-clr);
+.customer-info button:hover {
+  background-color: var(--dark-clr);
+  color: var(--pry-clr);
 }
-
-
 
 /* footer */
-.footer{
-    padding: 4vw 8vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    background: rgba(16, 28, 26, .7);
+.footer {
+  padding: 3vw 8vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  background: rgba(16, 28, 26, 0.7);
 }
 
-.footer .pro-links i{
-    font-size: 20px;
-    padding: 10px 10px;
-    margin: 5px;
-    background-color: var(--pry-clr);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.footer .pro-links i {
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: var(--dark-clr);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
+.footer .pro-links i:hover {
+  color: var(--dark-clr);
+  background-color: var(--pry-clr);
+  box-shadow: 0 0 10px var(--pry-clr);
+}
 
+/* about page styling */
 
+/* about me section */
+.about-me {
+  margin-top: 5rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  /* min-height: 100vh; */
+  /* padding: 8vw 8vw 0 8vw; */
+  /* background-color: var(--dark-clr); */
+}
 
+.about-me h2 {
+  text-align: start;
+}
 
-/* styling for the cursor tha is blinking */
+.about-img img {
+  width: 30vw;
+}
+
+/* call to action section */
+.call-to-action {
+  padding: 6vw 8vw 3rem;
+  text-align: center;
+  transition: 0.3s ease-in;
+  background-color: rgb(31, 30, 30);
+  margin: 3rem 0;
+}
+
+.call-to-action p {
+  font-size: 18px;
+}
+
+.call-to-action .btn-1 {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: var(--pry-clr);
+  border-radius: 4rem;
+  font-size: 1.9rem;
+  color: var(--dark-clr);
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid var(--pry-clr);
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.call-to-action .btn-2 {
+  padding: 1rem 2.8rem;
+  /* background-color: var(--dark-clr); */
+  color: var(--white-clr);
+  border: 2px solid var(--white-clr);
+  font-size: 1.8rem;
+  border-radius: 4rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  /* margin: 5px; */
+}
+
+.call-to-action .btn-2:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* styling for when you hover over the "hire me" button */
+.call-to-action .btn-1:hover {
+  transform: scale3d(1.03);
+  background-color: var(--pry-clr);
+  color: black;
+  box-shadow: 0 0 15px var(--pry-clr);
+}
+
+/* Portfolio page styling */
+
+/* Technologies section */
+.technologies {
+  text-align: center;
+}
+
+/* Contact page styling */
+
+/* FAQ section */
+.faq {
+  text-align: center;
+}
+
+.questions-container {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  font-size: 1.8rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.questions-container.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* styling for the cursor that is blinking */
 /* .typing-text span::after{
     content: "";
     background-color: var(--dark-clr);
@@ -579,86 +724,118 @@ span{
 } */
 
 /* Responsive Styling */
-@media(max-width:900px){
-    .navbar-menu{
-        position: absolute;
-        /* to make the menu bar open and close */
-        display: none;
-        top: 0;
-        right: 0;
-        width: 70%;
-        height: 100vh;
-        border-left: 1px solid var(--pry-clr);
-        /* to round the edges of the bottom left corner */
-        /* border-bottom-left-radius: 2rem; */
-        padding: 1rem solid;
-        background-color: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(5px);
-    }
+@media (max-width: 900px) {
+  .navbar-menu {
+    position: absolute;
+    /* to make the menu bar open and close */
+    display: none;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    border-left: 1px solid var(--pry-clr);
+    /* to round the edges of the bottom left corner */
+    /* border-bottom-left-radius: 2rem; */
+    padding: 1rem solid;
+    background-color: var(--dark-clr);
+    backdrop-filter: blur(5px);
+  }
 
-    .navbar-menu.active{
-        display: block;
-    }
+  .navbar-menu.active {
+    display: block;
+  }
 
-    .navbar-menu a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        padding: 0 7px;
-    }
+  .navbar-menu a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    padding: 0 20px;
+  }
 
-    .navbar-menu a:hover,
-    .navbar-menu a.active{
-        padding: 1rem 1.5rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid var(--pry-clr);
-    }
+  .navbar-menu a:hover,
+  .navbar-menu a.active {
+    padding: 1rem 2.3rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid var(--pry-clr);
+  }
 
-    /* to make the toggle button show */
-    .navbar-toggle{
-        display: block;
-        z-index: 100;
-    }
+  /* to make the toggle button show */
+  .navbar-toggle {
+    display: block;
+    z-index: 100;
+  }
 
-    /* styling for the toggle button when it's active */
-    .navbar-toggle.active .bar:nth-child(2){
-        opacity: 0;
-    }
+  /* styling for the toggle button when it's active */
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .navbar-toggle.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .navbar-toggle.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
+  /* for the home section */
+  .home {
+    flex-direction: column;
+    margin: 5rem 3rem;
+  }
 
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
 
-    .home-content h1{
-        font-size: 5rem;
-    }
+  .home-content h1 {
+    font-size: 5rem;
+  }
 
-    .home-img img{
-        width: 70vh;
-        margin-top: 4rem;
-    }
+  .home-img img {
+    width: 90%;
+    margin-top: 4rem;
+  }
 
-    .get-in-touch .customer-info{
-        width: 100%;
-    }
+  .get-in-touch .customer-info {
+    width: 100%;
+  }
 
+  .about,
+  .services,
+  .projects,
+  .choose,
+  .testimonials,
+  .get-in-touch {
+    margin-bottom: 5rem;
+  }
+
+  /* about section */
+  .about p,
+  .about a {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ddd;
+  }
+
+  .about-me {
+    /* width: 100%; */
+    flex-direction: column;
+    margin: 5rem 3rem;
+  }
+
+  .about-img img {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  /* .footer{
+    padding: 3vw 8vw;
+    } */
 }
 
-@media(max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
+@media (max-width: 1000px) {
+  .home {
+    gap: 4rem;
+  }
 }
