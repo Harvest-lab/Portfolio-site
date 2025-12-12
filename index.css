@@ -513,8 +513,7 @@ span {
 }
 
 .customer-info button:hover {
-  background-color: var(--dark-clr);
-  color: var(--pry-clr);
+  box-shadow: 0 0 15px var(--pry-clr);
 }
 
 /* footer */
@@ -572,7 +571,7 @@ span {
   padding: 6vw 8vw 3rem;
   text-align: center;
   transition: 0.3s ease-in;
-  background-color: rgb(31, 30, 30);
+  background: rgb(8, 28, 21);
   margin: 3rem 0;
 }
 
@@ -623,22 +622,60 @@ span {
 
 /* Technologies section */
 .technologies {
+  padding: 6vw 8vw 3rem;
   text-align: center;
+  transition: 0.3s ease-in;
+}
+
+.technologies .tech-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 3rem;
+  margin-top: 50px;
+}
+
+.technologies .tech-base .tech-box {
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(16, 28, 26, 0.7);
+  border: 1px solid #333;
+}
+
+.tech-box i {
+  font-size: 4rem;
+  margin: 15px 0;
+  color: var(--pry-clr);
+}
+
+.tech-box img {
+  width: 37px;
+  margin: 15px 0 12px;
+}
+
+.tech-box h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* Contact page styling */
 
 /* FAQ section */
 .faq {
+  padding: 6vw 8vw 3rem;
   text-align: center;
+  transition: all 0.3s ease-in;
+  color: var(--white-clr);
+  font-size: 18px;
 }
 
 .questions-container {
-  max-width: 700px;
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #fff;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
   cursor: pointer;
+  background-color: rgb(8, 28, 21);
+  border-left: 2px solid rgb(221, 161, 94);
+  border-radius: 10px;
 }
 
 .question {
@@ -648,19 +685,22 @@ span {
 }
 
 .question h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  text-align: start;
+  color: rgb(254, 250, 224);
 }
 
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease;
+  transition: all 1s ease;
 }
 
 .answer p {
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  text-align: start;
 }
 
 .questions-container.active .answer {
@@ -741,6 +781,10 @@ svg {
     backdrop-filter: blur(5px);
   }
 
+  .navbar-menu .nav1 {
+    margin-top: 7rem;
+  }
+
   .navbar-menu.active {
     display: block;
   }
@@ -749,12 +793,12 @@ svg {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
-    padding: 0 20px;
+    padding: 0 25px;
   }
 
   .navbar-menu a:hover,
   .navbar-menu a.active {
-    padding: 1rem 2.3rem;
+    padding: 0.5rem 2.8rem;
     border-radius: 0.5rem;
     border-bottom: 0.5rem solid var(--pry-clr);
   }
@@ -821,12 +865,18 @@ svg {
   .about-me {
     /* width: 100%; */
     flex-direction: column;
-    margin: 5rem 3rem;
+    margin: 6rem 0;
   }
 
   .about-img img {
     width: 90%;
     margin-top: 0;
+  }
+
+  /* portfolio section */
+  .portfolio,
+  .contact-me {
+    margin: 6rem 0;
   }
 
   /* .footer{
