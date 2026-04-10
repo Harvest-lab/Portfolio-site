@@ -8,10 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
       // for the toggle button
       const navbarToggle = document.querySelector(".navbar-toggle");
       const navbarMenu = document.querySelector(".navbar-menu");
+      const body = document.querySelector;
 
       navbarToggle.addEventListener("click", () => {
         navbarToggle.classList.toggle("active");
         navbarMenu.classList.toggle("active");
+
+        // to prevent the background from scrolling while the menu is open
+        body.style.overflow = menu.classList.contains("active")
+          ? "hidden"
+          : "auto";
       });
 
       // to highlight the active page

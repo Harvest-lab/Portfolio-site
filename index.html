@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,8 +26,14 @@
 
     <!-- Home section -->
     <section class="home">
+      <video autoplay loop muted playsinline class="bg-video">
+        <source src="portfolio-bg.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay"></div>
+
       <div class="home-img">
-        <img src="images/Profile picture.png" alt="Harvest's picture" />
+        <img src="images/Profile_picture.png" alt="Harvest's picture" />
       </div>
       <div class="home-content">
         <h1>Hi, it's <span>Harvest</span></h1>
@@ -38,16 +44,26 @@
           web solutions.
         </p>
         <div class="social-icons">
-          <!-- <a href="#"><img src="icons/githug icon.png"></a>
-                <a href="#"><img src="icons/instagram icon.png"></a>
-                <a href="#"><img src="icons/linkedin icon.png"></a>
-                <a href="#"><img src="icons/x icon.png"></a> -->
-
-          <i class="fab fa-github"></i>
+          <a
+            href="https://github.com/Harvest-lab"
+            target="_blank"
+            rel="noopener referrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <i class="fab fa-linkedin"></i>
-          <i class="fab fa-instagram"></i>
+          <a
+            href="https://www.instagram.com/ekoyataharvest/"
+            target="_blank"
+            rel="noopener referrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="resume.pdf" download="Harvest_Ekoyata_Resume.pdf">
+            <i class="far fa-file"></i>
+          </a>
         </div>
-        <a href="#" class="btn">Hire me</a>
+        <a href="contact.html" class="btn">Get in touch</a>
       </div>
     </section>
 
@@ -69,7 +85,7 @@
         genuinely enjoys bringing ideas to life — I'm your person.
       </p>
       <br />
-      <a href="#">Read more about me</a>
+      <a href="about.html">Read more about me</a>
     </section>
 
     <!-- My services -->
@@ -137,21 +153,23 @@
       </p>
       <div class="projects-base">
         <div class="project-box">
-          <a href="#">
+          <a href="projects/school.html">
             <img src="images/project 1.png" alt="" />
             <div class="details">
               <h4>School Website</h4>
               <p>Modern school website with ability to take exams</p>
+              <button href="projects/school.html">View Project</button>
             </div>
           </a>
         </div>
 
         <div class="project-box">
-          <a href="#">
+          <a href="https://harvestrestaurant.netlify.app/" target="_blank">
             <img src="images/project 2.png" alt="" />
             <div class="details">
               <h4>E-Commerce Website</h4>
               <p>Modern online shopping experience with seemless checkout</p>
+              <button>View Project</button>
             </div>
           </a>
         </div>
@@ -162,12 +180,13 @@
             <div class="details">
               <h4>Fintech Website</h4>
               <p>Professional business presence with CMS integration</p>
+              <button>View Project</button>
             </div>
           </a>
         </div>
       </div>
 
-      <a class="all-projects" href="#">View All Projects</a>
+      <a class="all-projects" href="portfolio.html">View All Projects</a>
     </section>
 
     <!-- Why hire me -->
