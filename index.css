@@ -113,9 +113,9 @@ header {
   justify-content: center;
   align-items: center;
   gap: 8rem;
+  width: 100%;
   min-height: 100vh;
-  padding: 8vw 8vw 0 8vw;
-  background-color: var(--dark-clr);
+  /* padding: 8vw 8vw 0 8vw; */
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -130,7 +130,7 @@ header {
   height: 100%;
   /* To keep the aspect ratio without stretching */
   object-fit: cover;
-  z-index: -2;
+  z-index: -1;
 }
 
 /* To darken the video a bit*/
@@ -141,7 +141,7 @@ header {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: -1;
+  z-index: -0;
 }
 
 .home-img,
@@ -151,7 +151,7 @@ header {
 }
 
 .home .home-content h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -166,34 +166,25 @@ span {
   font-weight: 700;
 }
 
-.home-img {
-  border-radius: 50%;
-}
-
 /* styling for the profile picture */
 .home-img img {
   position: relative;
   width: 32vw;
   border-radius: 50%;
-  box-shadow: 0 0 25px solid var(--pry-clr);
+  /* box-shadow: 0 0 25px var(--pry-clr); */
   cursor: pointer;
   transition: 0.2s linear;
-}
-
-.home-img img:hover {
-  font-size: 1.8rem;
-  font-weight: 500;
 }
 
 /* styling for the social icons */
 .social-icons i {
   color: #ddd;
-  font-size: 3rem;
-  padding: 10px;
+  font-size: 2.3rem;
+  padding: 8px;
   /* background-color: transparent; */
   border: 0.2rem solid var(--pry-clr);
-  border-radius: 50%;
-  margin: 1rem 1.5rem 2rem 0;
+  border-radius: 70px;
+  margin: 2rem 1.5rem 2rem 0;
   transition: 0.3s ease;
   /* background: var(--white-clr); */
 }
@@ -253,11 +244,11 @@ span {
   animation: words 20s infinite;
 }
 
-/* for about me */
-.about {
-  padding: 6vw 8vw 3vw;
+section {
+  padding: 4vw 6% 3vw;
 }
 
+/* for about me */
 .about h2 {
   text-align: center;
 }
@@ -281,12 +272,15 @@ span {
 
 /* my services */
 .services {
-  padding: 6vw 8vw 3vw;
   text-align: center;
   transition: 0.3s ease-in;
 }
 
-.services p {
+.services p,
+.projects p,
+.choose p,
+.testimonials p,
+.get-in-touch p {
   font-size: 18px;
 }
 
@@ -324,13 +318,8 @@ span {
 
 /* Projects */
 .projects {
-  padding: 6vw 8vw 3rem;
   text-align: center;
   transition: 0.3s ease-in;
-}
-
-.projects p {
-  font-size: 18px;
 }
 
 .projects .projects-base {
@@ -399,13 +388,8 @@ span {
 
 /* Why hire me */
 .choose {
-  padding: 6vw 8vw 3rem;
   text-align: center;
   transition: 0.3s ease-in;
-}
-
-.choose p {
-  font-size: 18px;
 }
 
 .choose .choose-base {
@@ -441,13 +425,8 @@ span {
 
 /* Client Testimonials */
 .testimonials {
-  padding: 6vw 8vw 3rem;
   text-align: center;
   transition: 0.3s ease-in;
-}
-
-.testimonials p {
-  font-size: 18px;
 }
 
 .testimonials .testimony-base {
@@ -503,13 +482,8 @@ span {
 
 /* get in touch */
 .get-in-touch {
-  padding: 6vw 8vw 3rem;
   text-align: center;
   transition: 0.3s ease-in;
-}
-
-.get-in-touch p {
-  font-size: 18px;
 }
 
 .get-in-touch .customer-info {
@@ -868,23 +842,36 @@ svg {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  html {
+    font-size: 50%;
+  }
+
+  h2 {
+    /* font-size: 4rem; */
+  }
+
+  .full-text {
+    font-size: 15px;
+    line-height: 2;
+  }
+
   /* for the home section */
   .home {
     flex-direction: column;
-    margin: 5rem 3rem;
+    /* margin: 5rem 3rem; */
   }
 
   .home .home-content h3 {
     font-size: 2.5rem;
   }
 
-  .home-content h1 {
-    font-size: 5rem;
+  .home .home-content h1 {
+    font-size: 3rem;
   }
 
   .home-img img {
-    width: 90%;
-    margin-top: 4rem;
+    width: 50%;
+    margin-top: 10rem;
   }
 
   .get-in-touch .customer-info {
@@ -898,6 +885,15 @@ svg {
   .testimonials,
   .get-in-touch {
     margin-bottom: 5rem;
+  }
+
+  .services p,
+  .projects p,
+  .choose p,
+  .testimonials p,
+  .get-in-touch p {
+    font-size: 15px;
+    line-height: 1.6;
   }
 
   /* about section */
